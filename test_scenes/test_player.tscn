@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://4dnx3nysbg0b"]
+
+[ext_resource type="PackedScene" uid="uid://1kgd2nvdepr3" path="res://enemies/red_goblin.tscn" id="2_lr1b1"]
+[ext_resource type="PackedScene" uid="uid://cswtfjmnkr27k" path="res://player/player.tscn" id="2_yv43i"]
+[ext_resource type="PackedScene" uid="uid://lbcrmrdspbip" path="res://enemies/yellow_goblin.tscn" id="3_p3ecf"]
+
+[node name="TestPlayer" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_yv43i")]
+position = Vector2(684, 314)
+
+[node name="RedGoblin" parent="." instance=ExtResource("2_lr1b1")]
+position = Vector2(625, -382)
+
+[node name="YellowGoblin" parent="." instance=ExtResource("3_p3ecf")]
+position = Vector2(8, 106)
+
+[node name="YellowGoblin2" parent="." instance=ExtResource("3_p3ecf")]
+position = Vector2(1255, 60)
+
+[node name="YellowGoblin3" parent="." instance=ExtResource("3_p3ecf")]
+position = Vector2(-61, 667)
+
+[node name="YellowGoblin4" parent="." instance=ExtResource("3_p3ecf")]
+position = Vector2(1327, 669)
